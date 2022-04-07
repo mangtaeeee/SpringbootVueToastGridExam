@@ -12,8 +12,8 @@ reffics:
       prepStmtCacheSqlLimit: 2048
       useServerPrepStmts: true
   redis:
-    redis-host: 192.168.0.30
-    redis-port: 16379
+    redis-host: 192.168.0.**
+    redis-port: 1****
     redis-password:
 
 logging:
