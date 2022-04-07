@@ -1,0 +1,24 @@
+reffics:
+  database:
+    jdbc-url: jdbc:postgresql://192.168.*********
+    username: ********
+    password: *********
+    pool-name: test-pool
+    maximum-pool-size: 1
+    minimum-idle: 1
+    data-source-properties:
+      cachePrepStmts: true
+      prepStmtCacheSize: 250
+      prepStmtCacheSqlLimit: 2048
+      useServerPrepStmts: true
+  redis:
+    redis-host: 192.168.0.30
+    redis-port: 16379
+    redis-password:
+
+logging:
+  level:
+    com.reffics: debug
+
+server:
+  port: 19090

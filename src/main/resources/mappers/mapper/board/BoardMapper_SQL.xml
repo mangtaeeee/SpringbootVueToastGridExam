@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.reffics.groupware.board.mapper.BoardDAO">
+	<select id="selectEmply" parameterType="com.reffics.groupware.board.model.BoardVO" resultType="com.reffics.groupware.board.model.BoardVO">
+		select emply_id
+				,emply_no
+				,emply_nm
+				,phone
+				,create_id
+				,create_dt
+				,mod_id
+				,mod_dt
+		from emply_master
+		<where>
+			<if test="type == 'emplyNm'"> emply_nm like '%' || #{content} || '%' </if>
+			<if test="type == 'emplyId'"> emply_id like '%' || #{content} || '%' </if>
+		</where>
+	</select>
+	<insert id="insertEmply" parameterType="com.reffics.groupware.board.model.BoardVO" >
+		insert into emply_master(emply_id,emply_no,emply_nm,phone,pwd,create_id,create_dt,mod_id,mod_dt)
+		values(
+			#{emplyId},
+			#{emplyNo},
+			#{emplyNm},
+			#{phone},
+			#{pwd},
+			#{createId},
+			#{createDt},
+			#{modId},
+			#{modDt}
+		)
+	</insert>
+</mapper>
