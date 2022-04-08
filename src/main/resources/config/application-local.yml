@@ -1,6 +1,6 @@
 reffics:
   database:
-    jdbc-url: jdbc:postgresql://192.168.*********
+    jdbc-url: jdbc:postgresql://19*********
     username: ********
     password: *********
     pool-name: test-pool
