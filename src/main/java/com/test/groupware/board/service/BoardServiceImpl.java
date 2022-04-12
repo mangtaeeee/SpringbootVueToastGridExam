@@ -1,4 +1,4 @@
-package com.reffics.groupware.board.service;
+package com.groupware.board.service;
 
 import java.util.List;
 
