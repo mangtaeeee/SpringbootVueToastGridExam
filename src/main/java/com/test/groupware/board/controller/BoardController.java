@@ -1,4 +1,4 @@
-package com.reffics.groupware.board.controller;
+package com.groupware.board.controller;
 
 import java.util.List;
 
