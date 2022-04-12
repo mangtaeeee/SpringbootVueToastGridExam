@@ -1,4 +1,4 @@
-package com.reffics.groupware.board.mapper;
+package com.groupware.board.mapper;
 
 import java.util.List;
 
