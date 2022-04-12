@@ -1,4 +1,4 @@
-package com.reffics.groupware.board.model;
+package com.groupware.board.model;
 
 import lombok.Data;
 
