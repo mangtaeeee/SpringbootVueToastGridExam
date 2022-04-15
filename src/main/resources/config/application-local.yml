@@ -18,7 +18,7 @@ test:
 
 logging:
   level:
-    com.reffics: debug
+    com.example: debug
 
 server:
   port: 19090
