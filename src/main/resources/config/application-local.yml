@@ -1,4 +1,4 @@
-reffics:
+test:
   database:
     jdbc-url: jdbc:postgresql://19*********
     username: ********
