@@ -15,8 +15,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
 @RestController
-@Log4j2 //로깅을 도와주는 어노테이션
-@RequiredArgsConstructor //초기화 되지 않은final 필드와 @NonNull 어노테이션이 붙은 필드에 대한 생성자를 생성함
+@Log4j2 
+@RequiredArgsConstructor 
 public class BoardController { 
 
 	
